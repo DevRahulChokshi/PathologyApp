@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ActivityDashboard">
+
+    <!-- "Notification" should appear as action bar -->
+    <item   android:id="@+id/action_bar_notification"
+            android:icon="@drawable/notification_icon"
+            android:title="@string/action_notification"
+            app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logout"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Pathology Lab</string>
+    <string name="health_packages">Health Packages</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="add_family_members">Add Family Members</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="home">Home</string>
+    <string name="logout">Logout</string>
+    <string name="firstName">First Name *</string>
+    <string name="middleName">Middle Name *</string>
+    <string name="mobileNumber">Mobile Number *</string>
+    <string name="lastName">Last Name *</string>
+    <string name="btn_link_login">Already have an account Login !!</string>
+    <string name="email">Email Id *</string>
+    <string name="password">Password * </string>
+    <string name="signUp">SIGN UP</string>
+    <string name="submit">SUBMIT</string>
+    <string name="reset_password"><u>Reset Password</u></string>
+    <string name="forgot_password"><u>Forgot your password?</u></string>
+    <string name="family_relation">Choose family relation</string>
+    <string name="md_choose_label">Choose</string>
+    <string name="familyMemberRelation">Relation *</string>
+    <string name="test_button">Choose</string>
+    <string name="text_choose">Select test name</string>
+    <string name="test_choose">Select the test name</string>
+    <string name="photo_button">photoButton</string>
+    <string name="date_of_birth">Date of Birth * (DD/MM/YYYY)</string>
+    <string name="login_txt">LOGIN</string>
+    <string name="register_txt">Register</string>
+    <string name="action_view_history">view history</string>
+    <string name="action_notification">notification</string>
+    <string name="toolbar_title">Pathology Lab</string>
+    <string name="action_bar_make_an_appointment">Appointment</string>
+    <string name="book_your_visit">Book your visit</string>
+    <string name="Appointment">Appointment</string>
+    <string name="appointment_history">Appointment History</string>
+    <string name="make_appointment">Make an Appointment</string>
+    <string name="report">Report</string>
+    <string name="dash_board_child">Dash Board Child</string>
+    <string name="title_activity_make_appointment">Make an appointment</string>
+    <string name="forgot_question_mark">Forgot your password?</string>
+    <string name="forgot_description">We just need your register Email id to sent your password reset instruction.</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_password">Confirm new password</string>
+    <string name="send">SEND</string>
+    <string name="child_appointment_history">Appointment History</string>
+    <string name="child_health_details">Health Package Details</string>
+    <string name="success">Success</string>
+    <string name="success_message">Your password has been rest.</string>
+    <string name="test_details">Activity Test Details</string>
+    <string name="test_type">Blood test</string>
+    <string name="timestamp">11:23</string>
+    <string name="notification_details">According yesterday blood test,your report is positive.</string>
+    <string name="notification">Notification</string>
+    <string-array name="image_ids">
+        <item>@drawable/make_an_apt</item>
+        <item>@drawable/book_ur_visit</item>
+        <item>@drawable/health_pkg</item>
+        <item>@drawable/add_family</item>
+        <item>@drawable/reports</item>
+        <item>@drawable/contact_us</item>
+    </string-array>
+</resources>

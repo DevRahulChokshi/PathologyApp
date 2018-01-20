@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="6dp"
+    card_view:contentPadding="7dp"
+    android:layout_margin="7dp"
+    card_view:cardBackgroundColor="#FFF"
+    android:background="#B2DFDB">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:background="@color/dark_blue"
+            android:textStyle="bold"
+            android:text="PACKAGE Show Here"
+            android:textColor="@color/white_greyish"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/light_blue">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:textColor="@color/dark_blue"
+                android:layout_marginLeft="10dp"
+                android:text="Prize:"/>
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/dark_blue"
+                android:textSize="20dp"
+                android:text="hi"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

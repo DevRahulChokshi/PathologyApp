@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/health_package_details_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:isScrollContainer="false"
+            android:theme="@style/ThemeOverlay.MyApp.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            style="@style/Widget.MyApp.Toolbar.Solid"/>
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="6dp"
+            card_view:cardElevation="6dp"
+            card_view:contentPadding="7dp"
+            android:padding="10dp"
+            android:layout_margin="7dp"
+            card_view:cardBackgroundColor="#FFF"
+            android:background="#B2DFDB">
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TableRow android:background="@color/light_blue">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Select Name of patient "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp">
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/SpinnerTheme" />
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="20dp"
+                    android:background="@color/light_blue">
+                    <TextView
+                        android:id="@+id/textHealthName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Name of health pack Show Here"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="20dp"
+                    android:background="@color/light_blue">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/light_blue"
+                        android:text="Components  : "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </TableRow>
+                <TableRow android:background="@color/light_blue">
+                    <TextView
+                        android:id="@+id/textComponents"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Components Show Here"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="20dp"
+                    android:background="@color/light_blue">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Price : "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </TableRow>
+                <TableRow android:background="@color/light_blue">
+                    <TextView
+                        android:id="@+id/textPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Website "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </TableRow>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/password_button"
+                    android:onClick="onSelectHealthPackage"
+                    android:text="Select Package"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </TableLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#607D8B</color>
+    <color name="colorPrimaryDark">#455A64</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#F5F5F5</color>
+
+    <color name="orange">#ff6900</color>
+
+    <color name="dark_blue">#3e6372</color>
+    <color name="white">#ffffff</color>
+    <color name="background_color">#fafaff</color>
+    <color name="white_greyish">#EEEEEE</color>
+    <color name="light_blue">#b2d4dc</color>
+
+    <color name="actionbar_title_text">#ffffff</color>
+</resources>

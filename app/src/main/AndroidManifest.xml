@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ebc003.pathologyapp">
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/pathology_launcher_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/pathology_launcher_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ActivityLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.ebc003.pathologyapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".ActivitySplash" />
+        <activity
+            android:name=".ActivityHealthPackages"
+            android:label="@string/title_activity_make_appointment"
+            android:parentActivityName=".ActivityDashboard"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ebc003.pathologyapp.ActivityDashboard" />
+        </activity>
+        <activity
+            android:name=".ActivityMakeAppointment"
+            android:label="@string/dash_board_child"
+            android:parentActivityName=".ActivityDashboard"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ebc003.pathologyapp.ActivityDashboard" />
+        </activity>
+        <activity
+            android:name=".ActivityTestDetails"
+            android:exported="true"
+            android:label="@string/test_details">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityMakeAppointment" />
+        </activity>
+        <activity
+            android:name=".ActivityContactUs"
+            android:parentActivityName=".ActivityDashboard"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ebc003.pathologyapp.ActivityDashboard" />
+        </activity>
+        <activity
+            android:name=".ActivityBookYourVisit"
+            android:label="@string/title_activity_make_appointment"
+            android:parentActivityName=".ActivityDashboard"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityDashboard" />
+        </activity>
+        <activity
+            android:name=".ActivityBookVisitDetails"
+            android:parentActivityName=".ActivityBookYourVisit"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ebc003.pathologyapp.ActivityBookYourVisit" />
+        </activity>
+        <activity
+            android:name=".ActivityReports"
+            android:parentActivityName=".ActivityDashboard"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ebc003.pathologyapp.ActivityDashboard" />
+        </activity>
+        <activity android:name=".ActivityRegister" />
+        <activity
+            android:name=".ActivityAddFamilyMembers"
+            android:parentActivityName=".ActivityDashboard"
+            tools:targetApi="jelly_bean">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ebc003.pathologyapp.ActivityDashboard" />
+        </activity>
+        <activity android:name=".ActivityDashboard" />
+        <activity
+            android:name=".ActivityHealthPackageDetails"
+            android:label="@string/child_health_details"
+            android:parentActivityName=".ActivityHealthPackages"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityDashboard" />
+        </activity>
+        <activity android:name=".ActivityForgetPassword" />
+        <activity
+            android:name=".MakeAnAppointmentHistory"
+            android:label="@string/child_appointment_history"
+            android:parentActivityName=".ActivityDashboard"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityDashboard" />
+        </activity>
+        <activity
+            android:name=".ActivityChangePassword"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://recipe-app.com/recipe" -->
+                <data
+                    android:host="www.ebusinesscanvas.com"
+                    android:path="/pathalogy_lab"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ResetPasswordSuccess" />
+        <activity android:name=".ActivityNotification"></activity>
+    </application>
+
+</manifest>
